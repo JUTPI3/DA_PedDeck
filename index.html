@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kepler Map Demo: 6 GeoJSON Layers</title>
+    <script src="https://unpkg.com/mapbox-gl@latest/dist/mapbox-gl.js"></script>
+    <link href="https://unpkg.com/mapbox-gl@latest/dist/mapbox-gl.css" rel="stylesheet" />
+    <style>
+        body { margin: 0; display: flex; flex-direction: column; }
+        .map-container { width: 100%; height: 400px; margin-bottom: 20px; }
+    </style>
+</head>
+<body>
+
+<!-- 6‚Â‚Ì’n}—p‚Ìdiv -->
+<div id="map1" class="map-container"></div>
+<div id="map2" class="map-container"></div>
+<div id="map3" class="map-container"></div>
+<div id="map4" class="map-container"></div>
+<div id="map5" class="map-container"></div>
+<div id="map6" class="map-container"></div>
+
+<script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoianV0cGkzanV0cGkzIiwiYSI6ImNtYjYzenJrdjFqZjQyanBwdDB4cG5idDgifQ.RDJAKIKJ5WQD0evWX_TDyA';  // JUTPI3 Mapbox Token
+    const geojsonFiles = [
+        'WD1.json',
+        'WD2.json',
+        'WD3.json',
+        'WE1.json',
+        'WE2.json',
+        'WE3.json'
+    ];
+
+    geojsonFiles.forEach((file, index) => {
+        const map = new mapboxgl.Map({
+            container: `map${index + 1}`,
+            style: 'mapbox://styles/mapbox/light-v9',
+            center: [106.8226, -6.2021],  // “K‹X’†S‚ðÝ’è
+            zoom: 16
+        });
+
+        map.on('load', () => {
+            map.addSource(`geojson-${index}`, {
+                type: 'geojson',
+                data: file
+            });
+            map.addLayer({
+                id: `geojson-layer-${index}`,
+                type: 'line',
+                source: `geojson-${index}`,
+                paint: {
+                    'line-color': '#FF5722',
+                    'line-width': 3
+                }
+            });
+        });
+    });
+</script>
+
+</body>
+</html>

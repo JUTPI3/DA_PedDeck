@@ -42,13 +42,12 @@
 <script>
     mapboxgl.accessToken = 'pk.eyJ1IjoianV0cGkzanV0cGkzIiwiYSI6ImNtYjYzenJrdjFqZjQyanBwdDB4cG5idDgifQ.RDJAKIKJ5WQD0evWX_TDyA';  // JUTPI3 Mapbox Token
     const geojsonFiles = [
-        'WD1.json',
-        'WD2.json',
-        'WD3.json',
-        'WE1.json',
-        'WE2.json',
-        'WE3.json'
-    ];
+    'https://jutpi3.github.io/DA_PedDeck/WD1.json',
+    'https://jutpi3.github.io/DA_PedDeck/WD2.json',
+    'https://jutpi3.github.io/DA_PedDeck/WD3.json',
+    'https://jutpi3.github.io/DA_PedDeck/WE1.json',
+    'https://jutpi3.github.io/DA_PedDeck/WE2.json',
+    'https://jutpi3.github.io/DA_PedDeck/WE3.json'];
 
     geojsonFiles.forEach((file, index) => {
         const map = new mapboxgl.Map({

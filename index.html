@@ -2,36 +2,60 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Kepler Visualization Index</title>
+    <title>JUTPI3 Dukuh Atas Pedestrian Deck Visualizationx</title>
     <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
         iframe {
             width: 100%;
-            height: 600px;
+            height: 300px; /* Height */
             border: 1px solid #ccc;
             margin-bottom: 20px;
+        }
+        .columns {
+            display: flex; /* In line */
+            gap: 20px; /* Margin */
+        }
+        .column {
+            flex: 1; /* Width */
         }
     </style>
 </head>
 <body>
-    <h1>Kepler Visualizations</h1>
+    <div style="font-family:Arial,sans-serif;">
+        <div style="background-color:#002855; color:white; padding:10px;">
+            <h1 style="margin:0; font-size:24px;">Dukuh Atas and Pedestrian Deck: Simulation Result 2045</h1>
+            <h2 style="margin:0; font-size:16px;">JABODETABEK Urban Transportation Policy Integration Project Phase 3 (JUTPI Phase-3), Indonesia (2022-2025)</h2>
+        </div>
+        <div style="background-color:#FFC72C; color:black; padding:10px;">
+            <p style="margin:0; font-size:12px;">Coordinating Ministry for Economic Affairs (CMEA), Republic of Indonesia, and Japan International Cooperation Agency (JICA)</p>
+            <p style="margin:0; font-size:12px;">Version 1.1 | 28 May 2025</p>
+        </div>
+    </div>
 
-    <h2>WD1: Weekday-Morning, Scenario 1 (Ped Deck+Extension Bridge)</h2>
-    <iframe src="WD1.html"></iframe>
+    <div class="columns">
+        <div class="column">
+            <h2>WD1: Weekday-Morning, Scenario 1 (Ped Deck+Extension Bridge)</h2>
+            <iframe src="WD1.html"></iframe>
 
-    <h2>WD2: Weekday-Morning, Scenario 2 (Ped Deck)</h2>
-    <iframe src="WD2.html"></iframe>
+            <h2>WD2: Weekday-Morning, Scenario 2 (Ped Deck)</h2>
+            <iframe src="WD2.html"></iframe>
 
-    <h2>WD3: Weekday-Morning, Scenario 3 (Current)</h2>
-    <iframe src="WD3.html"></iframe>
+            <h2>WD3: Weekday-Morning, Scenario 3 (Current)</h2>
+            <iframe src="WD3.html"></iframe>
+        </div>
 
-    <h2>WE1: Weekend-Afternoon, Scenario 5 (Ped Deck+Extension Bridge)</h2>
-    <iframe src="WE1.html"></iframe>
+        <div class="column">
+            <h2>WE1: Weekend-Afternoon, Scenario 1 (Ped Deck+Extension Bridge)</h2>
+            <iframe src="WE1.html"></iframe>
 
-    <h2>WE2: Weekend-Afternoon, Scenario 6 (Ped Deck)</h2>
-    <iframe src="WE2.html"></iframe>
+            <h2>WE2: Weekend-Afternoon, Scenario 2 (Ped Deck)</h2>
+            <iframe src="WE2.html"></iframe>
 
-    <h2>WE3: Weekend-Afternoon, Scenario 3 (Current)</h2>
-    <iframe src="WE3.html"></iframe>
-
+            <h2>WE3: Weekend-Afternoon, Scenario 3 (Current)</h2>
+            <iframe src="WE3.html"></iframe>
+        </div>
+    </div>
 </body>
 </html>

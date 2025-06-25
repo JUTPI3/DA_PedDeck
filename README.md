@@ -37,7 +37,7 @@ You can embed this simulation viewer into your website using the `<iframe>` snip
 Note: Please adjust the width and height values according to the layout of your website or application. The default example above uses width: 100% and height: 750px for optimal visibility on most desktop screens.
 
 
-© 2025 JICA（Japan International Cooperation Agency), Japan & Coordinating Ministry for Economic Affairs, Republic of Indonesia. Developed by the JUTPI Phase-3 Expert Team.
+© 2025 JICA（Japan International Cooperation Agency), Japan, & Coordinating Ministry for Economic Affairs (CMEA), Republic of Indonesia. Developed by the JUTPI Phase-3 Expert Team.
 
 This project is licensed under the Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) license. You are free to share and embed the interactive map for non-commercial and informational purposes only. Any other uses—including downloading, redistributing, modifying, or incorporating this work into commercial platforms—are strictly prohibited without prior written consent.
 
